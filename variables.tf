@@ -474,14 +474,14 @@ variable "redis_instance_type" {
   description = "Redis node instance type"
   type        = string
 
-  default = "cache.t3.small"
+  default = "cache.t3.medium"
 }
 
 variable "redis_engine_version" {
   description = "Redis engine version"
   type        = string
 
-  default = "5.0.5"
+  default = "5.0.6"
 }
 
 variable "redis_family" {
