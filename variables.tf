@@ -467,7 +467,7 @@ variable "enable_redis" {
   description = "Boolean to enable redis AWS resource"
   type        = string
 
-  default = true
+  default = false
 }
 
 variable "redis_instance_type" {
