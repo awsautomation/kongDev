@@ -176,7 +176,7 @@ variable "ec2_instance_type" {
   description = "EC2 instance type"
   type        = string
 
-  default = "t3.micro"
+  default = "t3.small"
 }
 
 variable "ec2_root_volume_size" {
@@ -204,7 +204,7 @@ variable "asg_max_size" {
   description = "The maximum size of the auto scale group"
   type        = string
 
-  default = 3
+  default = 1
 }
 
 variable "asg_min_size" {
@@ -218,7 +218,7 @@ variable "asg_desired_capacity" {
   description = "The number of instances that should be running in the group"
   type        = string
 
-  default = 2
+  default = 1
 }
 
 variable "asg_health_check_grace_period" {
@@ -241,7 +241,8 @@ variable "ce_pkg" {
   description = "Filename of the Community Edition package"
   type        = string
 
-  default = "kong-1.5.0.bionic.amd64.deb"
+ # default = "kong-1.5.0.bionic.amd64.deb"
+  default = "kong-enterprise-edition-1.5.0.4.bionic.all.deb"
 }
 
 # Load Balancer settings
@@ -409,7 +410,7 @@ variable "db_instance_class" {
   description = "Database instance class"
   type        = string
 
-  default = "db.t3.large"
+  default = "db.t3.small"
 }
 
 variable "db_instance_count" {
@@ -452,7 +453,7 @@ variable "db_multi_az" {
   description = "Boolean to specify if RDS is multi-AZ"
   type        = string
 
-  default = true
+  default = false
 }
 
 variable "db_backup_retention_period" {
