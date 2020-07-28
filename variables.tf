@@ -273,7 +273,7 @@ variable "enable_deletion_protection" {
   type        = string
 
   # Terraform default is false
-  default = true
+  default = false
 }
 
 variable "health_check_healthy_threshold" {
