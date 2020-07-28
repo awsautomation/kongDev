@@ -453,7 +453,7 @@ variable "db_multi_az" {
   description = "Boolean to specify if RDS is multi-AZ"
   type        = string
 
-  default = false
+  default = "false"
 }
 
 variable "db_backup_retention_period" {
@@ -468,7 +468,7 @@ variable "enable_redis" {
   description = "Boolean to enable redis AWS resource"
   type        = string
 
-  default = false
+  default = "true"
 }
 
 variable "redis_instance_type" {
